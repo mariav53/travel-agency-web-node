@@ -1,0 +1,26 @@
+{
+	"name": "agency",
+	"version": "1.0.0",
+	"description": "NodeJs Express and Sequelize ",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon server",
+		"start": "node server"
+	},
+	"keywords": [
+		"NodeJs",
+		"express",
+		"sequelize"
+	],
+	"author": "Maria Virginia",
+	"license": "ISC",
+	"dependencies": {
+		"mysql2": "^2.1.0",
+		"nodemon": "^2.0.4",
+		"pug": "^3.0.0",
+		"sequelize": "^6.3.5"
+	},
+	"devDependencies": {
+		"dotenv": "^8.2.0"
+	}
+}

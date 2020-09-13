@@ -1,0 +1,32 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de Janeiro   
+        em adventure
+
+block content
+    main.container.mt-5 
+        h2.text-center.mb-5 About us
+        .row.mb-5
+            .col-md-6
+                p Nunc leo odio, porttitor at fermentum nec, hendrerit eu ipsum. Integer ornare dui fringilla eros elementum cursus. Aenean venenatis nulla quis lectus fermentum, quis malesuada dui varius.
+
+                p Nunc leo odio, porttitor at fermentum nec, hendrerit eu ipsum. Integer ornare dui fringilla eros elementum cursus. Aenean venenatis nulla quis lectus fermentum, quis malesuada dui varius.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg" , class="img-fluid")
+        
+        h2.text-center.mb-5 Upcoming trips
+        include ../layout/partials/trips
+
+    .discount
+        .container  
+            .row    
+                .col-md-6
+                    h3 5% discount
+                    p.title Trip to Canada
+                    p.date March 20, 2021 - march 28, 2021
+                    p.price  2.000€
+    
+    .container
+        h2.text-center.my-5 Reviews
+        include ../layout/partials/reviews
