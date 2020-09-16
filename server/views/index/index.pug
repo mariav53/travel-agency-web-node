@@ -1,32 +1,40 @@
 extends ../layout/index
 block slider
-    .slider
-        h1 Rio de Janeiro   
-        em adventure
+    .slider-container
+        .slider
+            p Explore the world with us
+            h1 Let's go on an adventure
+             a.nav-link(href="/us", title="go to about us page" , class="go-to-about")
+                .btn.btn-outline-primary.learn-more Learn more
+        
 
 block content
     main.container.mt-5 
-        h2.text-center.mb-5 About us
-        .row.mb-5
-            .col-md-6
-                p Nunc leo odio, porttitor at fermentum nec, hendrerit eu ipsum. Integer ornare dui fringilla eros elementum cursus. Aenean venenatis nulla quis lectus fermentum, quis malesuada dui varius.
+        h4.sub-title What we do
+        h2.mb-5 About us
+        .backgroundColor
+            .row.mb-5
+                .col-md-6
+                    p Nunc leo odio, porttitor at fermentum nec, hendrerit eu ipsum. Integer ornare dui fringilla eros elementum cursus. Aenean venenatis nulla quis lectus fermentum, quis malesuada dui varius.
 
-                p Nunc leo odio, porttitor at fermentum nec, hendrerit eu ipsum. Integer ornare dui fringilla eros elementum cursus. Aenean venenatis nulla quis lectus fermentum, quis malesuada dui varius.
-            .col-md-6
-                img(src="/img/inicio_nosotros.jpg" , class="img-fluid")
+                    p Nunc leo odio, porttitor at fermentum nec, hendrerit eu ipsum. Integer ornare dui fringilla eros elementum cursus. Aenean venenatis nulla quis lectus fermentum, quis malesuada dui varius.
+                .col-md-6
+                    img(src="/img/inicio_nosotros.jpg" , class="img-fluid")
         
-        h2.text-center.mb-5 Upcoming trips
+        h4.sub-title Where to go
+        h2.mb-5 Upcoming trips
         include ../layout/partials/trips
 
-    .discount
+    .discount.mt-4
         .container  
             .row    
-                .col-md-6
+                .col-md-6.pt-5
                     h3 5% discount
                     p.title Trip to Canada
                     p.date March 20, 2021 - march 28, 2021
-                    p.price  2.000€
+                    p.price  1.500€
     
-    .container
-        h2.text-center.my-5 Reviews
+    .container.mt-5.mb-4 
+        h4.sub-title what travelers say about us
+        h2.mb-5 Reviews
         include ../layout/partials/reviews

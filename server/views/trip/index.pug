@@ -1,19 +1,19 @@
 extends ../layout/index
 block content
-    main.container.mt-5
+    main.container.mt-5.mb-4 
         .row
             .col-md-5
                  img(src=`/img/destinos_${trip.image}_ln.jpg`, class="img-fluid", alt=`${trip.image} image`)  
             .col-md-7
-                h1 #{trip.title}
-                p 
-                    i.fas.fa-calendar-alt
-                    |Depart date #{trip.depart_date} - return date #{trip.return_date}
-                p 
-                    i.fas.fa-euro-sign
-                    | #{trip.price} 
-                p 
-                    i.fas.fa-users
-                    | #{trip.available} 
+                h1.trip-title.mb-4 #{trip.title}
+                .info-block.d-flex
+                    img.mr-2(src="/img/calendar.png", alt="calendar icon", class="trip-icon")
+                    p Depart date #{trip.depart_date} - return date #{trip.return_date}
+                .info-block.d-flex
+                    img.mr-2(src="/img/euro.png", alt="calendar icon", class="trip-icon")
+                    p #{trip.price} 
+                .info-block.d-flex 
+                    img.mr-2(src="/img/avail.png", alt="calendar icon", class="trip-icon")
+                    p #{trip.available} 
                 p= trip.description
             

@@ -1,5 +1,5 @@
 :root {
-	font-family: 'Staatliches', cursive;
+	font-family: 'Oswald', cursive;
 	font-family: 'Covered By Your Grace', cursive;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -9,8 +9,8 @@ body {
 h1,
 h2,
 h3 {
-	font-family: 'Staatliches', cursive;
-	color: #15b9d5;
+	font-family: 'Oswald', cursive;
+	color: #2c1320;
 }
 h1 {
 	font-size: 3.4rem;
@@ -20,6 +20,12 @@ h2 {
 }
 h3 {
 	font-size: 3rem;
+}
+
+h4.sub-title {
+	text-transform: uppercase;
+	color: #2c1320;
+	font-size: 16px;
 }
 
 .btn-success {
@@ -33,27 +39,50 @@ h3 {
 	background-color: rgb(184, 5, 73);
 	border-color: rgb(192, 7, 78);
 }
+.slider-container {
+	padding-top: 97px;
+}
 .slider {
 	background: url(../img//superior.jpg);
-	min-height: 600px;
-	height: 100vh;
-	background-size: cover;
+	min-height: 300px;
+	height: 81vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	color: white;
+	/* 	background-position: center center; */
+	background-position: 50% 30%;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .slider h1 {
-	color: white;
+	color: #2c1320;
 }
-.slider em {
-	font-family: 'Covered By Your Grace', cursive;
-	font-size: 4rem;
-	order: -1;
-	line-height: 0.8;
-	color: rgba(255, 255, 255, 0.5);
+.slider p {
+	font-weight: 500;
+	margin-bottom: 0;
+	font-size: 24px;
+	color: #2c1320;
 }
+.go-to-about {
+	text-align: center;
+}
+.btn-outline-primary.learn-more {
+	border-color: #2c1320 !important;
+	color: #2c1320 !important;
+}
+
+.btn-outline-primary.learn-more:active {
+	background-color: #2c1320 !important;
+	color: white !important;
+}
+
+.btn-outline-primary.learn-more:hover {
+	background: #2c1320;
+	color: white !important;
+}
+
 @media (min-width: 768px) {
 	.slider em {
 		font-size: 8rem;
@@ -63,42 +92,50 @@ h3 {
 	position: relative;
 }
 .home .navigation {
-	background: transparent;
+	background: white;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 }
 .nav-link.active {
-	border-bottom: 5px solid white;
+	border-top: 2px solid #5f4b66;
 }
 blockquote {
 	font-weight: bold;
 	line-height: 2;
 }
 p {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	line-height: 2;
 }
 .navigation {
-	background-color: #15b9d5;
+	background-color: #fff;
 }
 header .nav a {
-	font-family: 'Staatliches', cursive;
-	font-size: 2rem;
+	font-family: 'Oswald', cursive;
+	font-size: 1.5rem;
+	color: #2c1320;
+}
+.footer {
+	background-color: #56667a !important;
 	color: white;
 }
 footer .nav a,
 .copyright {
-	font-family: 'Staatliches', cursive;
-	font-size: 1.6rem;
-	color: black;
+	font-family: 'Oswald', cursive;
+	font-size: 1.3rem;
+	color: white;
 }
 .list-icons {
-	background-color: rgb(245, 245, 245);
+	background-color: #a7adc62e;
 }
 .list-icons img {
 	height: 100px;
+}
+
+.list-icons h2 {
+	font-size: 2.1rem;
 }
 
 .discount {
@@ -110,6 +147,11 @@ footer .nav a,
 		url(../img/cupon.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: bottom;
+}
+
+.discount h3 {
+	color: white;
 }
 @media (min-width: 768px) {
 	.discount {
@@ -132,7 +174,7 @@ footer .nav a,
 	color: white;
 }
 .discount p {
-	font-family: 'Staatliches', cursive;
+	font-family: 'Oswald', cursive;
 	line-height: 0.8;
 }
 .discount .title {
@@ -144,7 +186,7 @@ footer .nav a,
 	color: #fff;
 }
 .discount .price {
-	color: #15b9d5;
+	color: #a7adc6;
 	font-size: 3rem;
 }
 
@@ -164,16 +206,70 @@ i {
 	background-image: url(../img/quote.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 40px;
+	background-size: 20px;
 	content: '';
-	width: 40px;
-	height: 40px;
+	width: 20px;
+	height: 20px;
 	display: block;
 	margin-bottom: 1rem;
 }
 .blockquote-footer {
 	text-align: right;
-	color: #dc135f;
+	color: #2c1320;
 	font-weight: bold;
 	margin-top: 1rem;
+}
+
+.backgroundColor {
+	background-image: url(../img/fondo.jpg);
+	background-repeat: no-repeat;
+	padding: 20px;
+}
+.trip-card {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+	border: none !important;
+	text-align: center;
+}
+.backgroundColorUs {
+	background-image: url(../img/background_1.jpg);
+	background-repeat: no-repeat;
+	padding: 12px;
+	background-size: cover;
+	background-position: right;
+}
+
+.trip-card h4 {
+	font-weight: 600;
+	color: #2c1320;
+	font-size: 19px;
+}
+.more-info {
+	font-size: 12px;
+	border: none;
+	text-decoration: underline;
+	color: #2c1320 !important;
+	text-align: center;
+}
+img.trip-icon {
+	width: 25px;
+	height: auto;
+}
+
+.info-block {
+	align-items: end;
+}
+h2.trip-title {
+	font-size: 1.8rem;
+}
+
+h1.trip-title {
+	font-size: 2.8rem;
+}
+.send {
+	text-align: center;
+}
+.send .btn {
+	background-color: #2c1320 !important;
+	border-color: #2c1320 !important;
+	color: white !important;
 }

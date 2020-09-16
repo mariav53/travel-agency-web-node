@@ -1,15 +1,8 @@
 .row.upcoming-trips
     each trip in trips
         .col-md-6.col-lg-4.mb-4
-            .card
+            .card.trip-card 
                 img(src=`img/destinos_${trip.image}.jpg`, class="img-fluid", alt=`${trip.image} image`)  
                 .card-body
-                    h2=trip.title
-                    p 
-                        i.fas.fa-calendar-alt
-                        | #{trip.depart_date} - #{trip.return_date}
-                    p 
-                        i.fas.fa-euro-sign
-                        | #{trip.price} 
-                    p= trip.description.substr(0,100)
-                    a(href=`trips/${trip.id}`, class="btn btn-success btn-block", title="title") more info 
+                    h4.text-center=trip.title
+                    a(href=`trips/${trip.id}`, class="more-info", title="title") more info 
